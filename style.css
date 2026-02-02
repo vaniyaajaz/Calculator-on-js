@@ -1,18 +1,21 @@
   body {
             background-color: #737ef5 !important;
             margin: 0;
-            padding: 10px;
+            padding-right: 20px;
+            padding-left: 0px;
             display: flex;
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
+            margin-left: 15px;
+            margin-bottom:0%;
 }
 
 h1 {
     font-family: 'Trebuchet MS', sans-serif;
     font-weight: bolder;
     color: white;
-    font-size: clamp(30px, 8vw, 50px);
+    font-size: clamp(50px, 6vw, 50px);
     border-top: 2px dotted white;
     border-bottom: 2px dotted white;
     text-align: center;
@@ -25,11 +28,12 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px auto;
-    width: 95%;
+    margin: 10px auto;
+    width: 90%;
     max-width: 320px;
     border-radius: 20px;
     box-sizing: border-box;
+    margin-bottom:0%;
 }
 input {
     background-color: #3f3770;
@@ -38,12 +42,12 @@ input {
     font-size: 25px;
     width: 100%;
     box-sizing: border-box;
-    height: 54px;
+    height: 70px;
     border: 1px solid #3f3770;
     border-radius: 8px;
     outline: none;
-    padding-left: 10px;
-    margin-bottom: 15px;
+    padding-left: 15px;
+    margin-bottom: 0px;
 }
 #buttons {
     background-color: #885ad6;
@@ -53,7 +57,7 @@ input {
     border-radius: 15px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
+    gap: 4px;
 }
 .mybuttons {
     background-color: #c971bf;
@@ -63,8 +67,8 @@ input {
     border-radius: 5px;
     font-size: 18px;
     width: 100%;
-    aspect-ratio: 1 / 1;
-    cursor: pointer;
+    aspect-ratio: 2 / 1.1;
+    cursor: pointer`;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,6 +81,6 @@ input {
         padding: 40px 200px;
     }
     #Calculator {
-        width: 30%;
+        width: 35%;
     }
 }
