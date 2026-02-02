@@ -67,7 +67,6 @@ function eventclick(event) {
     if (text === '=') {
         if (whatToDo.length === 0 && terms.length <= 1) {
         display.value = "0";
-        solved = 0;
         return;
         }
         for (let i = 0; i < whatToDo.length; i++) {
