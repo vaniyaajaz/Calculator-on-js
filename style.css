@@ -1,18 +1,18 @@
 body {
     background-color: #737ef5 !important;
-    margin: 0; /* Reset margins for mobile */
-    padding: 20px; /* Add small padding so content doesn't hit the edges */
+    margin: 0;
+    padding: 20px;
 }
 
 #Calculator {
     background-color: white;
-    padding: 10px 10px;
+    padding: 5px 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    width: 90%; /* Take up most of the screen on mobile */
-    max-width: 320px; /* But don't get too huge */
+    width: 90%;
+    max-width: 320px;
     border-radius: 20px;
 }
 
@@ -20,7 +20,7 @@ h1 {
     font-family: 'Trebuchet MS', sans-serif;
     font-weight: bolder;
     color: white;
-    font-size: 32px; /* Smaller font for phones */
+    font-size: 32px;
     border-top: 2px dotted white;
     border-bottom: 2px dotted white;
     text-align: center;
@@ -34,11 +34,11 @@ h1 {
     }
     
     #Calculator {
-        width: 30%; /* Return to original desktop width */
+        width: 30%;
     }
 
     h1 {
-        font-size: 50px; /* Larger font for desktop */
+        font-size: 50px;
     }
 }
 
@@ -58,7 +58,7 @@ input {
     font-family: 'Trebuchet MS', sans-serif;
     color: white;
     font-size: 25px;
-    width: 90%; /* Make input fill the calculator container */
+    width: 90%;
     max-width: 210px;
     height: 54px;
     border: 1px solid #3f3770;
