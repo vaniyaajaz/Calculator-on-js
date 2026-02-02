@@ -15,10 +15,6 @@ let answer = 0
 
 function eventclick(event) {
     if (numbers.includes(text)) {
-        if (isFinished) {
-            terms = []
-            isFinished = false
-        }
         if (terms.length === 0 || operand === true) {
             let val = (text === ".") ? "0." : text;
             terms.push(val)
