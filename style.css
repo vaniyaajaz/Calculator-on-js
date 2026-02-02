@@ -1,10 +1,44 @@
 body {
     background-color: #737ef5;
-    margin-left: 20%;
-    margin-right: 20%;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;    
     min-height: 100vh; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+#Calculator {
+  width: 100%;
+  max-width: 320px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    color: white;
+    font-size: clamp(30px, 8vw, 50px);
+    border-top: 3px dotted white;
+    border-bottom: 3px dotted white;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+#display {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  padding: 15px;
+  font-size: 24px;
+  text-align: right;
 }
 
 .mybuttons {
@@ -28,42 +62,10 @@ body {
     background-color: #e1a7db;
 }
 
-#display {
-  width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 15px;
-  padding: 10px;
-  text-align: right;
-}
-
-h1 {
-    font-style: italic;
-    font-family: 'Trebuchet MS', sans-serif;
-    font-style: normal;
-    font-weight: bolder;
-    color: white;
-    font-size: 50px;
-    border-top-style: dotted;
-    border-bottom-style: dotted;
-    display: inline-block;
-    margin-left: 37%;
-    margin-right: 37%;
-    margin-top: 10%
-}
-
 #buttons {
     background-color: #885ad6;
     border: #885ad6;
     padding: 10px;
     width: 217px;
     border-radius: 10%;
-}
-
-#Calculator {
-  width: 95%;
-  max-width: 400px;
-  padding: 20px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
 }
