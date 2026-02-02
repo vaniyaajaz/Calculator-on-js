@@ -104,7 +104,6 @@ function eventclick(event) {
         operand = false;
         isFinished = false;
         display.value = ""
-        solved = 0
     }
     if (text === 'Ans' || text === 'π' || text === 'e') {
         if (isFinished) { terms = []; isFinished = false; }
