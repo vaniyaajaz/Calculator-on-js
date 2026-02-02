@@ -111,10 +111,9 @@ function eventclick(event) {
     if (text === 'Ans' || text === 'π' || text === 'e') {
         if (isFinished) { terms = []; isFinished = false; }
 
-        if (text === 'Ans') { display.value = answer; terms.push(answer); }
-        if (text === 'π') { display.value = "π"; terms.push(Math.PI); }
-        if (text === 'e') { display.value = "e"; terms.push(Math.E); }
-        operand = true
+        if (text === 'Ans') { display.value = answer; terms.push(answer); operand = false}
+        if (text === 'π') { display.value = "π"; terms.push(Math.PI); operand = true}
+        if (text === 'e') { display.value = "e"; terms.push(Math.E); operand = true}
     }
     if (text === 'M+') {
         memory += Number(display.value) || 0;
