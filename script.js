@@ -64,6 +64,11 @@ function eventclick(event) {
         display.value = terms.length > 0 ? terms[terms.length - 1] : ""
     }
     if (text === '=') {
+        if (whatToDo.length === 0 && terms.length <= 1) {
+        display.value = "0";
+        solved = 0;
+        return;
+        }
         for (let i = 0; i < whatToDo.length; i++) {
             let currentOp = whatToDo[i]
             if (['sin', 'cos', 'tan', "√"].includes(currentOp)) {
@@ -94,7 +99,11 @@ function eventclick(event) {
         isFinished = true
     }
     if (text === 'AC') {
-        terms = []; whatToDo = []; operand = false; isFinished = false; display.value = ""
+        terms = [];
+        whatToDo = [];
+        operand = false;
+        isFinished = false;
+        display.value = ""
         solved = 0
     }
     if (text === 'Ans' || text === 'π' || text === 'e') {
