@@ -11,6 +11,7 @@ let operand = false
 let isFinished = false
 let memory = 0
 var text = ""
+let answer = 0
 
 function eventclick(event) {
     if (numbers.includes(text)) {
@@ -97,6 +98,7 @@ function eventclick(event) {
         whatToDo = []
         operand = false
         isFinished = true
+        answer = solved
     }
     if (text === 'AC') {
         terms = [];
@@ -104,11 +106,12 @@ function eventclick(event) {
         operand = false;
         isFinished = false;
         display.value = ""
+        solved = 0
     }
     if (text === 'Ans' || text === 'π' || text === 'e') {
         if (isFinished) { terms = []; isFinished = false; }
 
-        if (text === 'Ans') { display.value = solved; terms.push(solved); }
+        if (text === 'Ans') { display.value = answer; terms.push(answer); }
         if (text === 'π') { display.value = "π"; terms.push(Math.PI); }
         if (text === 'e') { display.value = "e"; terms.push(Math.E); }
         operand = true
