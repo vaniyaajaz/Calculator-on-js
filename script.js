@@ -67,16 +67,16 @@ function eventclick(event) {
         for (let i = 0; i < whatToDo.length; i++) {
             let currentOp = whatToDo[i]
             if (['sin', 'cos', 'tan', "√"].includes(currentOp)) {
+                let val = Number(terms.shift())
                 if (currentOp === '√') {
                     solved = Math.sqrt(val)
                 } else {
-                    let val = Number(terms.shift())
                     let rad = val * (Math.PI / 180)
                     if (currentOp === 'sin') solved = Math.sin(rad)
                     if (currentOp === 'cos') solved = Math.cos(rad)
                     if (currentOp === 'tan') solved = Math.tan(rad)
-                    terms.unshift(solved)
                 }
+                terms.unshift(solved)
             } else {
                 let n1 = Number(terms.shift())
                 let n2 = Number(terms.shift())
