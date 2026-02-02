@@ -28,23 +28,12 @@ body {
     background-color: #e1a7db;
 }
 
-input {
-    background-color: #3f3770;
-    font-family: 'Trebuchet MS', sans-serif;
-    color: white;
-    border: #353e9c;
-    border-style: double;
-    border-width: 2px;
-    color: white;
-    font-size: 25px;
-    width: 210px;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    height: 54px;
-    border: 1px solid #3f3770;
-    border-radius: 8px;
-    outline: none;
-    padding-left: 10px;
+#display {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  padding: 10px;
+  text-align: right;
 }
 
 h1 {
