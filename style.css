@@ -73,8 +73,9 @@ h1 {
     background-color: white;
     border: white;
     padding: 10px;
-    display: inline-block;
-    border-radius: 10%;
-    margin-left: 36%;
-    margin-right: 36%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 }
